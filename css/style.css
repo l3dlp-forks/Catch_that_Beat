@@ -1,0 +1,168 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#clear_both{
+	clear: both;
+}
+
+#pageWrap{
+	background-color: #09C;
+	position: relative;
+	margin: 0px;
+	padding: 0 0 20px;
+	height: auto;
+}
+
+/* STYLE FOR HEADER.HTML */
+
+#logo{
+	width: 225px;
+	height: 150px;
+	float: left;
+}
+
+#searchBox{
+	width: 600px;
+	height: 75px;
+	float: left;
+	margin-left: 555px;
+	position: absolute;
+}
+
+#logo h1{
+	background-image: ;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	height: 150px;
+}
+
+#searchContent{
+	background-image: url(/Catch%20that%20Beat/images/searchBG.png);
+	height: 65px;
+	background-repeat: no-repeat;
+	width: 475px;
+	margin: 50px 0px;
+}
+
+fieldset{
+	border: hidden;
+	height: 65px;
+}
+
+#searchContent input.searchField{
+	margin: 6px 0px 0px 10px;
+	width: 402px;
+	height: 51px;
+	border: 0px;
+	font-size: 24px;
+	color: #FFC106;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding: 10px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	outline: none;	
+}
+
+::-webkit-input-placeholder{
+	color: #fff8af;
+}
+::-moz-placeholder{
+	color: #fff8af;
+}
+:-moz-placeholder{
+	color: #fff8af;
+}
+:-ms-input-placeholder{
+	color: #fff8af;
+}
+
+#searchContent input.searchButton{
+	width: 55px;
+	height: 51px;
+	position: relative;
+	float: right;
+	left: -8px;
+	top: -51px;
+	cursor: pointer;
+	background:url(/Catch%20that%20Beat/images/searchGo.png) no-repeat;
+	border: none;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	-o-appearance: button;
+	-ms-appearance: button;
+	appearance: button;
+}
+
+/* STYLE FOR ARTIST.PHP */
+
+#artist_info {
+	font-family: "Lucida Console", Monaco, monospace;
+	padding: 20px 50px;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+#artist_name{
+	float: left;
+	margin-bottom: 10px;
+	font-size: 50px;
+	font-variant: small-caps;
+}
+
+#related_names{
+	float: left;
+	margin-top: 15px;
+	margin-left: 40px;
+	font-size: 22px;
+}
+
+#info{
+	clear: both;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+#heading {
+	font-size: 40px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+	background-color: #036;
+	height: 150px;
+	position: relative;
+}
+
+#song_list {
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: auto;
+	margin: 20px 20px 10px;
+	background-color: #9ACEE2/* #B1D7F5*/;
+	clear: both;
+	/*top: 370px;*/
+	top: 10px;
+}
+
+#slideshow {
+	margin: 20px 40px;
+	float: left;
+	position: absolute;
+	height: 350px;
+}
+
+#jplayer_container {
+	margin: 10px 0px;
+	float: left;
+	position: relative;
+	/*z-index: -1;*/
+	width: 600px;
+	height: 350px;
+	margin-left: 600px;
+}
+
