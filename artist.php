@@ -6,16 +6,32 @@
 <link rel="stylesheet" href="css/style.css" />
 
 <!--						IMPORT SCRIPTS								-->
-<link type="text/css" href="skin/jPlayer.Blue.Monday.2.2.0/blue.monday/jplayer.blue.monday.css" rel="stylesheet" />
+<!--<link type="text/css" rel="stylesheet" href="skin/jPlayer.Blue.Monday.2.2.0/blue.monday/jplayer.blue.monday.css" />-->
+<link type="text/css" rel="stylesheet" href="plugin/jscrollpane/jquery.jscrollpane.css" />
+<link type="text/css" rel="stylesheet" href="skin/jplayer_hot_ice/jplayer_hot_ice_skin.css" />
+<!-- <link type="text/css" rel="stylesheet" href="skin/jplayer_hot_ice/jplayer_hot_ice_skin_revised.css" /> -->
 
 <!--						IMPORT LIBS									-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <!--						PLUGINS										-->
 <script type="text/javascript" src="plugin/jQuery.jPlayer.2.2.0/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/to-title-case.js"></script>
+<script type="text/javascript" src="plugin/jscrollpane/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="plugin/jscrollpane/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="plugin/jscrollpane/jScrollPane.js"></script>
+
 
 <!--						SCRIPTS										-->
 <script type="text/javascript" src="js/instance_jplayer.js"></script>
+<script type="text/javascript" src="plugin/jscrollpane/jquery.jplayerskin.js"></script>
+<script type="application/javascript" src="js/clickSearch.js"></script>
+<script>
+function setSearchPlaceholder(selected){
+	var selectedTxt = selected.options[selected.selectedIndex].text;
+	$(".searchField").attr("placeholder", selectedTxt + "...");
+}
+</script>
 
 <title>Catch That Beat: Artist</title>
 </head>

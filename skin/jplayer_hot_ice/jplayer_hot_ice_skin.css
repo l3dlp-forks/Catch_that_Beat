@@ -1,0 +1,564 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+ * Skin for jPlayer Plugin (jQuery JavaScript Library)
+ * http://www.jplayer.org
+ *
+ * Skin Name: Hot Ice
+*/
+
+div.jp-single-player,
+div.jp-playlist-player {
+	font-size:1em;
+	font-family:Arial,Verdana, sans-serif;
+	line-height:1.6;
+	color: #666;
+	width:600px;
+	height:350px;
+}
+div.jp-playlist-player a {
+	color:#ffffff;
+}
+div.jp-interface {
+	position: relative;
+	background:url(hot_ice_jplayer_bg.png) no-repeat;
+	width:600px;
+	height:350px;
+	background-color: transparent;
+	border:0;	
+}
+div.jp-single-player div.jp-interface {
+	border-bottom:none;
+}
+div.jp-playlist-player div.jp-interface {
+}
+
+
+/*controls*/
+
+div.jp-controls-holder{
+	clear: both;
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/*top: -8px;*/
+}
+
+div.jp-interface ul.jp-controls {
+	position: relative;
+	clear: both;
+	list-style-type:none;
+/*	padding:50px;*/
+	margin: 0;
+	overflow: visible;
+}
+
+div.jp-audio ul.jp-controls{
+	width: 600px;
+/*	padding: 20px 20px 0;*/
+}
+
+div.jp-audio-stream ul.jp-controls{
+	width: 600px;
+/*	padding: 20px 20px 0;*/
+}
+
+div.jp-interface ul.jp-controls li {
+	/*position: absolute;*/
+}
+div.jp-interface ul.jp-controls a {
+	position: absolute;
+	text-indent:-9999px;
+	display: block;
+	overflow: hidden;
+}
+a.jp-play,
+a.jp-pause {
+	top: 60px;
+	/*margin-left: 57px;*/
+	width:44px;
+	height:44px;
+}
+div.jp-single-player a.jp-play,
+div.jp-single-player a.jp-pause,
+div.jp-playlist-player a.jp-play,
+div.jp-playlist-player a.jp-pause {
+	left:58px;
+}
+
+a.jp-play {
+	background: url(hot_ice_jplayer.png) 0 0 no-repeat;
+}
+a.jp-play:hover {
+	background: url(hot_ice_jplayer.png) -52px 0 no-repeat;
+}
+a.jp-pause {
+	background: url(hot_ice_jplayer.png) 0 -45px no-repeat;
+	display: none;
+}
+a.jp-pause:hover {
+	background: url(hot_ice_jplayer.png) -51px -45px no-repeat;
+}
+
+a.jp-stop, a.jp-previous, a.jp-next{
+	width: 33px;
+	height: 31px;
+	background: none;
+}
+
+a.jp-stop{
+	background: url(hot_ice_jplayer.png) 0 -90px no-repeat;
+	left: 106px;
+	top: 65px;
+}
+a.jp-stop:hover{
+	background: url(hot_ice_jplayer.png) -37px -90px no-repeat;
+}
+a.jp-previous {
+	left:23px;
+	top:65px;
+}
+a.jp-previous{
+	background: url(hot_ice_jplayer.png) 0 -225px no-repeat;
+}
+a.jp-previous:hover {
+	background: url(hot_ice_jplayer.png) -37px -225px no-repeat;
+}
+a.jp-next {
+	left:141px;
+	top:65px;
+}
+a.jp-next{
+	background: url(hot_ice_jplayer.png) 0 -192px no-repeat;
+}
+a.jp-next:hover {
+	background: url(hot_ice_jplayer.png) -37px -192px no-repeat;
+}
+a.jp-shuffle,
+a.jp-shuffle-off {
+	left: 190px;
+	top: 73px;
+	width: 29px;
+	height: 18px;
+}
+a.jp-shuffle{
+	background: url(hot_ice_jplayer.png) 0 -345px no-repeat;
+}
+a.jp-shuffle:hover{
+	background: url(hot_ice_jplayer.png) -32px -345px no-repeat;
+}
+a.jp-shuffle-off{
+	background: url(hot_ice_jplayer.png) -68px -345px no-repeat;
+	display: none;
+}
+a.jp-shuffle-off:hover{
+	background: url(hot_ice_jplayer.png) -100px -345px no-repeat;
+}
+a.jp-repeat,
+a.jp-repeat-off {
+	left: 227px;
+	top: 72px;
+	width: 25px;
+	height: 21px;
+}
+a.jp-repeat{
+	background: url(hot_ice_jplayer.png) 0 -322px no-repeat;
+}
+a.jp-repeat:hover{
+	background: url(hot_ice_jplayer.png) -33px -322px no-repeat;
+}
+a.jp-repeat-off{
+	background: url(hot_ice_jplayer.png) -69px -322px no-repeat;
+	display: none;
+}
+a.jp-repeat-off:hover{
+	background: url(hot_ice_jplayer.png) -101px -322px no-repeat;
+}
+
+
+/*progress bar*/
+
+div.jp-progress {
+	position: absolute;
+	overflow:hidden;
+	top:91px;
+	width:285px;
+	height:17px;
+	background-color: #ddd;
+	/*z-index:2;*/
+}
+div.jp-single-player div.jp-progress,
+div.jp-playlist-player div.jp-progress {
+	left:281px;
+}
+
+div.jp-seek-bar {
+	background: url(hot_ice_jplayer.png) 0 -303px repeat-x;
+	width:0px;
+	height:17px;
+	cursor: pointer;
+}
+div.jp-play-bar {
+	background: url(hot_ice_jplayer.png) 0 -281px repeat-x ;
+	width:0px;
+	height:17px;
+}
+
+
+/*volume controls*/
+
+a.jp-mute,
+a.jp-unmute {
+	top:113px;
+	width:13px;
+	height:17px;
+}
+
+a.jp-unmute{
+	background: url(hot_ice_jplayer.png) 0 -366px no-repeat;
+}
+a.jp-unmute:hover{
+	background: url(hot_ice_jplayer.png) -29px -366px no-repeat;
+}
+
+a.jp-mute{
+	background: url(hot_ice_jplayer.png) -69px -366px no-repeat;
+	display: none;
+}
+
+a.jp-mute:hover{
+	background: url(hot_ice_jplayer.png) -101px -366px no-repeat;
+}
+
+div.jp-single-player a.jp-mute,
+div.jp-single-player a.jp-unmute,
+div.jp-playlist-player a.jp-mute,
+div.jp-playlist-player a.jp-unmute {
+	left:33px;
+}
+
+a.jp-volume-max {
+	top:113px;
+	background: url(hot_ice_jplayer.png) 0 -382px no-repeat;
+	width:27px;
+	height:18px;
+}
+
+a.jp-volume-max:hover{
+	background: url(hot_ice_jplayer.png) -28px -382px no-repeat;
+}
+
+div.jp-single-player a.jp-volume-max,
+div.jp-playlist-player a.jp-volume-max {
+	left:221px;
+}
+
+div.jp-volume-bar {
+	position: absolute;
+	overflow:hidden;
+	top:118px;
+	background: url(hot_ice_jplayer.png) 0 -271px repeat-x;
+	width:154px;
+	height:6px;
+	cursor: pointer;
+}
+div.jp-single-player div.jp-volume-bar,
+div.jp-playlist-player div.jp-volume-bar {
+	left:56px;
+}
+
+div.jp-volume-bar-value {
+	background: url(hot_ice_jplayer.png) 0 -271px repeat-x;
+	width:0px;
+	height:6px;
+}
+
+
+/*current time and duration time*/
+
+div.jp-current-time,
+div.jp-duration {
+	position: absolute;
+	top:113px;
+	width:285px;
+	font-size:10pt;
+	font-weight:bold;
+	color:#ffffff;
+	z-index:1;
+}
+div.jp-duration {
+	text-align: right;
+}
+div.jp-single-player div.jp-current-time,
+div.jp-single-player div.jp-duration,
+div.jp-playlist-player div.jp-current-time,
+div.jp-playlist-player div.jp-duration {
+	left:281px;
+}
+
+
+/*playlist and track info*/
+
+div.jp-playlist {
+	width:591px;
+	height:204px;
+	position: absolute;
+	top: 142px;
+	left: 5px;
+}
+div.jp-track-info {
+	top:14px;
+	left:115px;
+	position: absolute;
+	text-align: center;
+	text-shadow: 1px 1px white, -1px -1px #001C4F;
+}
+div.jp-track-info h2 {
+	color:#204768;
+	font-size:16pt;
+	padding:0;
+	margin:0 16px;
+	float: left;
+}
+div.jp-track-info h4 {
+	color:#2E3A47;
+	font-size:10pt;
+	font-weight:normal;
+	padding:0;
+	margin-top: 7px;
+	float: left;
+}
+.jp-table {
+	margin:0;
+	padding:0;
+}
+.jp-table td {
+	color:#ffffff;
+	font-size:10pt;
+	margin:0;
+	padding:0;
+	height:23px;
+}
+.jp-table tr {
+	margin:0;
+	padding:0;
+	height:23px;
+	cursor: pointer;
+}
+.jp-table .jp-table-track {
+	width:45px;
+	text-align:center;
+	font-weight:bold;
+	border-top:1px solid #3c3c3c;
+	border-right:1px solid #3e3e3e;
+	border-bottom:1px solid #2c2c2c;
+}
+.jp-table .jp-table-name {
+	width:108px;
+	padding-left:2px;
+	border-top:1px solid #393939;
+	border-right:1px solid #373737;
+	border-bottom:1px solid #252525;
+	border-left:1px solid #2c2c2c;
+}
+.jp-table .jp-table-artist {
+	width:160px;
+	padding-left:2px;
+	border-top:1px solid #3b3b3b;
+	border-right:1px solid #3d3d3d;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #2e2e2e;
+}
+.jp-table .jp-table-album {
+	width:171px;
+	padding-left:2px;
+	border-top:1px solid #3b3b3b;
+	border-right:1px solid #3d3d3d;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #2e2e2e;
+}
+.jp-table .jp-table-time {
+	width:100px;
+	padding-left:2px;
+	border-top:1px solid #3b3b3b;
+	border-right:1px solid #3d3d3d;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #2e2e2e;
+}
+
+.jp-table .jp-table-remove {
+	text-align:center;
+	font-weight:bold;
+	font-size:10pt;
+	width:13px;
+	border-top:1px solid #393939;
+	border-right:1px solid #373737;
+	border-bottom:1px solid #252525;
+	border-left:1px solid #2c2c2c;
+}
+.jp-table-remove a,.jp-table-remove-hover a {
+	padding:5px 2px;
+	text-decoration:none;
+}
+.jp-table-remove a:hover,.jp-table-remove-hover a:hover {
+	text-decoration:none;
+	color:#ffffff;
+}
+.jp-table-remove a:visited,.jp-table-remove-hover a:visited {
+	text-decoration:none;
+	color:#ffffff;
+}
+/* Hover */
+.jp-table .jp-table-track-hover {
+	background:#009EEA;
+	width:28px;
+	text-align:center;
+	font-weight:bold;
+	border-top:1px solid #525252;
+	border-right:1px solid #4c4c4c;
+	border-bottom:1px solid #303030;
+}
+.jp-table .jp-table-artist-hover {
+	background:#009EEA;
+	width:160px;
+	padding-left:2px;
+	border-top:1px solid #525252;
+	border-right:1px solid #4c4c4c;
+	border-bottom:1px solid #2d2d2d;
+	border-left:1px solid #3a3a3a;
+}
+.jp-table .jp-table-name-hover {
+	background:#009EEA;
+	width:108px;
+	padding-left:2px;
+	border-top:1px solid #525252;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #3a3a3a;
+}
+.jp-table .jp-table-album-hover {
+	background:#009EEA;
+	width:171px;
+	padding-left:2px;
+	border-top:1px solid #525252;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #3a3a3a;
+}
+.jp-table .jp-table-time-hover {
+	background:#009EEA;
+	width:100px;
+	padding-left:2px;
+	border-top:1px solid #525252;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #3a3a3a;
+}
+.jp-table .jp-table-remove-hover {
+	background:#009EEA;
+	text-align:center;
+	font-weight:bold;
+	font-size:10pt;
+	width:13px;
+	border-top:1px solid #525252;
+	border-right:1px solid #444444;
+	border-bottom:1px solid #292929;
+	border-left:1px solid #3a3a3a;
+}
+/* Current */
+.jp-table .jplayer_playlist_current .jp-table-track {
+	background: url(img/current.png) repeat-x;
+	width:28px;
+	text-align:center;
+	font-weight:bold;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8fb6d1;
+	border-bottom:1px solid #8cb3cc;
+}
+.jp-table .jplayer_playlist_current .jp-table-artist {
+	background: url(img/current.png) repeat-x;
+	width:160px;
+	padding-left:2px;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8eb5cf;
+	border-bottom:1px solid #8cb3cc;
+	border-left:1px solid #779bb4;
+}
+.jp-table .jplayer_playlist_current .jp-table-name {
+	background: url(img/current.png) repeat-x;
+	width:108px;
+	padding-left:2px;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8ab1cb;
+	border-bottom:1px solid #8cb3cc;
+	border-left:1px solid #7599b1;
+}
+.jp-table .jplayer_playlist_current .jp-table-album {
+	background: url(img/current.png) repeat-x;
+	width:171px;
+	padding-left:2px;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8ab1cb;
+	border-bottom:1px solid #8cb3cc;
+	border-left:1px solid #7599b1;
+}
+.jp-table .jplayer_playlist_current .jp-table-time {
+	background: url(img/current.png) repeat-x;
+	width:100px;
+	padding-left:2px;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8ab1cb;
+	border-bottom:1px solid #8cb3cc;
+	border-left:1px solid #7599b1;
+}
+.jp-table .jplayer_playlist_current .jp-table-remove {
+	background: url(img/current.png) repeat-x;
+	text-align:center;
+	font-weight:bold;
+	font-size:10pt;
+	width:13px;
+	border-top:1px solid #80a4bd;
+	border-right:1px solid #8ab1cb;
+	border-bottom:1px solid #8cb3cc;
+	border-left:1px solid #7599b1;
+}
+.jp-playlist-player #jplayer_playlist a{
+	text-indent: -9999;
+	position: absolute;
+}
+.jp-playlist-player .jScrollPaneTrack {
+	background: #181818;
+}
+.jp-playlist-player .jScrollPaneDrag {
+	background: url(img/middle.png) repeat-y;
+}
+.jp-playlist-player .jScrollPaneDragTop {
+	background: url(img/top-scroll.png) no-repeat;
+	height: 1px;
+}
+.jp-playlist-player .jScrollPaneDragBottom {
+	background: url(img/bottom-scroll.png) no-repeat;
+	height: 1px;
+}
+.jp-playlist-player a.jScrollArrowUp {
+	height: 9px;
+	background: url(img/top.png) no-repeat;
+	
+}
+.jp-playlist-player a.jScrollArrowUp:hover {
+	background-position: 0 0;
+}
+.jp-playlist-player a.jScrollArrowDown {
+	height: 9px;
+	background: url(img/bottom.png) no-repeat;
+}
+.jp-playlist-player a.jScrollArrowDown:hover {
+	background-position: 0 0;
+}
+/* IE SPECIFIC HACKED STYLES */
+* html .jp-playlist-player .jScrollPaneDragBottom {
+	bottom: -1px;
+}
+/* /IE SPECIFIC HACKED STYLES */
