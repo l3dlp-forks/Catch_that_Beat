@@ -58,6 +58,9 @@ $(document).ready(function(){
 //					alert("before alias check");
 //					alert($('#info').has('td.nickname').length !== 0);
 					
+					//clear html of related_names
+					$('#related_names').html('');
+					
 					//get related names if info has field
 					if($('#info').find('td.nickname').length !== 0){
 						$('#related_names').html($('#info td.nickname'));
@@ -68,11 +71,58 @@ $(document).ready(function(){
 					if($('#info').find('table.infobox').length !== 0){
 						$('#info table.infobox').each(function(){
 							if($(this).prev().not('div.topicon').length !== 0){
+								var moreNames = '';
 								$('tr td span[lang]', this).each(function(){
-									$('#related_names').append($(this).text() + ' ');
+									moreNames += $(this).text() + ', ';
 								});
+								$('#related_names td').append('<br>\n' + moreNames);
+//								console.log('more names: ' + moreNames);
+							}
+							if($(this).prev().not('div.topicon').length == 0){
+								var names = $('tr th', this).first().text();
+//								console.log($('tr th', this).first().html());
+								names = names.replace(/\n/g, ', ');
+								$('#related_names td').append('<br>\n' + names);
+//								console.log('names: ' + names);
 							}
 						});
+					}
+					
+//					console.log('related names:' + $('#related_names').html());
+//					console.log('related names: ' + $('#related_names').text());
+					
+					//removes duplicates if found
+					if($('#related_names').html().toLowerCase().indexOf(searchInput.toLowerCase()) !== -1){
+//						console.log($('#related_names').text().toLowerCase());
+						var regexInput = new RegExp(searchInput.toLowerCase(), 'g');
+						var relatedNames = $('#related_names').text();
+//						console.log('new html:' + relatedNames);
+						relatedNames = relatedNames.replace(/\n/g, ', ');
+						var checkMatch = relatedNames.toLowerCase().split(', ');
+						relatedNames = relatedNames.split(', ');
+						
+						//index of removed alias
+						var index = checkMatch.indexOf(searchInput.toLowerCase());
+//						console.log(index);
+						relatedNames.splice(index, 1);
+						index = relatedNames.indexOf('');
+						relatedNames.splice(index, 1);
+						
+						//get length of aliases
+						var len = relatedNames.length;
+						
+						//group names by 3
+						var arrRelatedNames = [];
+						var groupIndex = 0;
+						for(var i = 0; i < len; i += 3){
+							var group = relatedNames.slice(i, i+3).join(', ');
+							arrRelatedNames[groupIndex] = group;
+							groupIndex++;
+						}
+						relatedNames = arrRelatedNames.join('<br>');
+//						console.log(relatedNames);
+//						console.log($('#related_names').html());
+						$('#related_names td').html(relatedNames);
 					}
 					
 					$('#info').html($('#info p').first());

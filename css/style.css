@@ -8,7 +8,7 @@
 }
 
 #pageWrap{
-	background-color: #09C;
+	background-color: #64ADFF/*#09C*/;
 	position: relative;
 	margin: 0px;
 	padding: 0 0 20px;
@@ -16,6 +16,15 @@
 }
 
 /* STYLE FOR HEADER.HTML */
+
+#heading {
+	font-size: 40px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFF;
+	background-color: #036;
+	height: 150px;
+	position: relative;
+}
 
 #logo{
 	width: 225px;
@@ -147,41 +156,28 @@ fieldset{
 #artist_name{
 	float: left;
 	margin-bottom: 10px;
-	font-size: 50px;
+	font-size: 80px;
 	font-variant: small-caps;
+	font-family: sanvito-pro-display;
+	text-shadow: -2px -2px #ACC9D2, 2px -2px #036, 1px 1px #ACC9D2, -2px 2px #ACC9D2;
 }
 
 #related_names{
 	float: left;
-	margin: 15px 0 10px 40px;
+	margin: 20px 0 10px 40px;
 	font-size: 22px;
+	vertical-align: middle;
+}
+
+#related_names .nickname{
+	padding: 10px;
+	min-height: 86px;
 }
 
 #info{
 	clear: both;
 	margin-left: 20px;
 	font-size: 16px;
-}
-
-#heading {
-	font-size: 40px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #FFF;
-	background-color: #036;
-	height: 150px;
-	position: relative;
-}
-
-#song_list {
-	font-size: large;
-	font-family: Arial, Helvetica, sans-serif;
-	position: relative;
-	width: auto;
-	margin: 20px 20px 10px;
-	background-color: #9ACEE2/* #B1D7F5*/;
-	clear: both;
-	/*top: 370px;*/
-	top: 10px;
 }
 
 #slideshow {
@@ -201,3 +197,72 @@ fieldset{
 	margin-left: 600px;
 }
 
+#song_list {
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: auto;
+	margin: 20px 20px 10px;
+	background-color: #9ACEE2/* #B1D7F5*/;
+	clear: both;
+	/*top: 370px;*/
+	top: 10px;
+}
+
+#song_table {
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0px 10px;
+	padding: 10px;
+	color: #0A3961;
+}
+
+#song_table tbody tr {
+	cursor: pointer;
+}
+
+#song_table tbody td {
+	padding: 10px;
+	border-style: solid;
+	border-color: #2C92A7;
+	border-width: 1px;
+}
+
+#song_table tbody tr:hover {
+	background-color: #38859E;
+	color: #D3F4FE;
+}
+
+#song_table thead th{
+	font-size: 28px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+	padding: 10px;
+}
+
+#searched_song {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+.add {
+	width: 40px;
+}
+
+.track_name {
+	width: 400px;
+}
+
+.artist {
+	width: 250px;
+}
+
+.album {
+	width: 350px;
+}
+
+.time {
+	width: 100px;
+}

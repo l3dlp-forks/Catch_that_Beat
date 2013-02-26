@@ -5,6 +5,9 @@
 
 <link rel="stylesheet" href="css/style.css" />
 
+<!--						FONT SCRIPTS 								-->
+<script src="http://use.edgefonts.net/sanvito-pro-display.js"></script>
+
 <!--						IMPORT SCRIPTS								-->
 <!--<link type="text/css" rel="stylesheet" href="skin/jPlayer.Blue.Monday.2.2.0/blue.monday/jplayer.blue.monday.css" />-->
 <link type="text/css" rel="stylesheet" href="plugin/jscrollpane/jquery.jscrollpane.css" />
@@ -51,7 +54,26 @@ function setSearchPlaceholder(selected){
 			<!--		using uplayer start guide		-->
 			<?php include("include/jplayer.html"); ?>
 		</div>
-		<div id="song_list"></div>
+		<div id="song_list">
+			<table cellspacing="1" id="song_table">
+				<thead>
+					<th class="add"></th>
+					<th class="track_name">Track Name</th>
+					<th class="artist">Artist</th>
+					<th class="album">Album</th>
+					<th class="time">Time</th>
+				</thead>
+				<tbody>
+					<tr id="searched_song">
+						<td class="add"></td>
+						<td class="track_name">Track Name</td>
+						<td class="artist">Artist</td>
+						<td class="album">Album</td>
+						<td class="time">Time</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </body>
 </html>
