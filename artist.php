@@ -24,11 +24,13 @@
 <script type="text/javascript" src="plugin/jscrollpane/jquery.mousewheel.js"></script>
 <script type="text/javascript" src="plugin/jscrollpane/jScrollPane.js"></script>
 
+<!--						SCRIPTS USING APIS							-->
+<script type="text/javascript" src="js/clickSearch.js"></script>
+<script type="text/javascript" src="js/searchSongs.js"></script>
 
 <!--						SCRIPTS										-->
 <script type="text/javascript" src="js/instance_jplayer.js"></script>
 <script type="text/javascript" src="plugin/jscrollpane/jquery.jplayerskin.js"></script>
-<script type="application/javascript" src="js/clickSearch.js"></script>
 <script>
 function setSearchPlaceholder(selected){
 	var selectedTxt = selected.options[selected.selectedIndex].text;
@@ -63,15 +65,7 @@ function setSearchPlaceholder(selected){
 					<th class="album">Album</th>
 					<th class="time">Time</th>
 				</thead>
-				<tbody>
-					<tr id="searched_song">
-						<td class="add"></td>
-						<td class="track_name">Track Name</td>
-						<td class="artist">Artist</td>
-						<td class="album">Album</td>
-						<td class="time">Time</td>
-					</tr>
-				</tbody>
+				<tbody></tbody>
 			</table>
 		</div>
 	</div>

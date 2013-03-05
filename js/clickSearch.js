@@ -22,7 +22,7 @@ $(document).ready(function(){
 //			alert("search input valid");
 			$('#artist_name').text(searchInput.toTitleCase());
 			
-			var searchStr = selectedTxt == 'Song Title' ? 'song' : selectedTxt == 'Album Name' ? 'album' : selectedTxt;
+			var searchStr = selectedTxt == 'Song Title' ? 'song' : selectedTxt == 'Album Name' ? 'album' : 'artist';
 			
 //			alert('searchStr: ' + searchStr);
 			
@@ -173,5 +173,9 @@ $(document).ready(function(){
 //				alert("parsed txt");
 			});
 		}
+		
+		//search for songs relating to searchInput using Echonest API
+		searchSongs(searchInput, searchStr);
+		
 	});
 });

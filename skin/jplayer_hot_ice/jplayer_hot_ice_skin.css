@@ -532,19 +532,19 @@ div.jp-track-info h4 {
 	background: #181818;
 }
 .jp-playlist-player .jScrollPaneDrag {
-	background: url(img/middle.png) repeat-y;
+	background: url(middle.png) repeat-y;
 }
 .jp-playlist-player .jScrollPaneDragTop {
-	background: url(img/top-scroll.png) no-repeat;
+	background: url(top-scroll.png) no-repeat;
 	height: 1px;
 }
 .jp-playlist-player .jScrollPaneDragBottom {
-	background: url(img/bottom-scroll.png) no-repeat;
+	background: url(bottom-scroll.png) no-repeat;
 	height: 1px;
 }
 .jp-playlist-player a.jScrollArrowUp {
 	height: 9px;
-	background: url(img/top.png) no-repeat;
+	background: url(top.png) no-repeat;
 	
 }
 .jp-playlist-player a.jScrollArrowUp:hover {
@@ -552,7 +552,7 @@ div.jp-track-info h4 {
 }
 .jp-playlist-player a.jScrollArrowDown {
 	height: 9px;
-	background: url(img/bottom.png) no-repeat;
+	background: url(bottom.png) no-repeat;
 }
 .jp-playlist-player a.jScrollArrowDown:hover {
 	background-position: 0 0;

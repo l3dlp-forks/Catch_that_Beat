@@ -251,8 +251,18 @@ fieldset{
 	width: 40px;
 }
 
+tbody .add{
+	background: url(../images/add_song.png) no-repeat;
+	background-position: center;
+}
+
+tbody .add:hover{
+	background: url(../images/add_song-hover.png) no-repeat;
+	background-position: center;
+}
+
 .track_name {
-	width: 400px;
+	width: 420px;
 }
 
 .artist {
@@ -264,5 +274,6 @@ fieldset{
 }
 
 .time {
-	width: 100px;
+	width: 80px;
+	text-align: center;
 }
