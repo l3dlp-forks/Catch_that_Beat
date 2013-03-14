@@ -8,7 +8,7 @@
 }
 
 #pageWrap{
-	background-color: #64ADFF/*#09C*/;
+	background-color: #cadbf9/*#AAC2C6 #A7E6F3 #64ADFF*/;
 	position: relative;
 	margin: 0px;
 	padding: 0 0 20px;
@@ -17,11 +17,8 @@
 
 /* STYLE FOR HEADER.HTML */
 
-#heading {
-	font-size: 40px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	color: #FFF;
-	background-color: #036;
+#heading{
+	background-color: #07508B/*#183456 #031B50*/;
 	height: 150px;
 	position: relative;
 }
@@ -50,14 +47,14 @@ select{
 	-ms-appearance: none;
 	padding: 4px;
 	margin: 0px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: -4px -4px 10px 1px #003 inset, -1px -1px 4px -1px #fff;
-	-moz-box-shadow: -4px -4px 10px 1px #003 inset, -1px -1px 4px -1px #fff;
-	box-shadow: -4px -4px 10px 1px #003 inset, -1px -1px 4px -1px #fff;
-	background: #06F;
-	color: #FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 1px 10px 5px #0250a2 inset;
+	-webkit-box-shadow: 1px 1px 10px 5px #0250a2 inset;
+	box-shadow: 1px 1px 10px 5px #0250a2 inset;
+	background: #91cefb;
+	color: #036;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -101,8 +98,8 @@ fieldset{
 	background-color: transparent;
 	border: 0px;
 	font-size: 24px;
-	color: #FFC106;
-	font-family: Tahoma, Geneva, sans-serif;
+	color: #036;
+	font-family: "Comic Sans MS", cursive;
 	padding: 10px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -113,16 +110,16 @@ fieldset{
 }
 
 ::-webkit-input-placeholder{
-	color: #fff8af;
+	color: #f5f8fd;
 }
 ::-moz-placeholder{
-	color: #fff8af;
+	color: #f5f8fd;
 }
 :-moz-placeholder{
-	color: #fff8af;
+	color: #f5f8fd;
 }
 :-ms-input-placeholder{
-	color: #fff8af;
+	color: #f5f8fd;
 }
 
 #searchContent input.searchButton{
@@ -131,22 +128,20 @@ fieldset{
 	position: relative;
 	float: right;
 	left: -8px;
-	top: -51px;
+	top: 6px;
 	cursor: pointer;
 	background: url(../images/searchGo.png) no-repeat;
 	border-bottom-right-radius: 25px;
 	border-top-right-radius: 25px;
-	-webkit-appearance: button;
-	-moz-appearance: button;
-	-o-appearance: button;
-	-ms-appearance: button;
-	appearance: button;
+	border-color: #64ADFF;
+	border-width: medium;
 }
 
 /* STYLE FOR ARTIST.PHP */
 
 #artist_info {
 	font-family: "Lucida Console", Monaco, monospace;
+	color: #0A3961;
 	padding: 20px 50px;
 	width: auto;
 	height: auto;
@@ -154,12 +149,13 @@ fieldset{
 }
 
 #artist_name{
+	color: #0050a1;
 	float: left;
 	margin-bottom: 10px;
 	font-size: 80px;
 	font-variant: small-caps;
-	font-family: sanvito-pro-display;
-	text-shadow: -2px -2px #ACC9D2, 2px -2px #036, 1px 1px #ACC9D2, -2px 2px #ACC9D2;
+	font-family: sanvito-pro-display, Arial, Helvetica, sans-serif;
+	text-shadow: -2px -2px #dde7f3, 2px -2px #568fd2, 1px 1px #dde7f3, -2px 2px #dde7f3;
 }
 
 #related_names{
@@ -203,9 +199,8 @@ fieldset{
 	position: relative;
 	width: auto;
 	margin: 20px 20px 10px;
-	background-color: #9ACEE2/* #B1D7F5*/;
+	background-color: #568fd2;
 	clear: both;
-	/*top: 370px;*/
 	top: 10px;
 }
 
@@ -215,7 +210,7 @@ fieldset{
 	height: auto;
 	margin: 0px 10px;
 	padding: 10px;
-	color: #0A3961;
+	color: #fdf6da;
 }
 
 #song_table tbody tr {
@@ -225,13 +220,13 @@ fieldset{
 #song_table tbody td {
 	padding: 10px;
 	border-style: solid;
-	border-color: #2C92A7;
+	border-color: #0A3961;
 	border-width: 1px;
 }
 
 #song_table tbody tr:hover {
-	background-color: #38859E;
-	color: #D3F4FE;
+	background-color: #76abd5;
+	color: #094e99;
 }
 
 #song_table thead th{
@@ -241,7 +236,7 @@ fieldset{
 	padding: 10px;
 }
 
-#searched_song {
+#song_table tbody tr{
 	position: relative;
 	width: auto;
 	height: auto;
@@ -267,6 +262,7 @@ tbody .add:hover{
 
 .artist {
 	width: 250px;
+	text-align: center;
 }
 
 .album {

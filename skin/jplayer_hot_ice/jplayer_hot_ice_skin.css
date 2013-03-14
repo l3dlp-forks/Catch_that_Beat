@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document */
 
 /*
@@ -313,17 +312,17 @@ div.jp-track-info {
 	left:115px;
 	position: absolute;
 	text-align: center;
-	text-shadow: 1px 1px white, -1px -1px #001C4F;
+	text-shadow: 1px 1px #9DC8F7, -1px -1px #001C4F;
 }
 div.jp-track-info h2 {
-	color:#204768;
+	color:#036;
 	font-size:16pt;
 	padding:0;
 	margin:0 16px;
 	float: left;
 }
 div.jp-track-info h4 {
-	color:#2E3A47;
+	color:#036;
 	font-size:10pt;
 	font-weight:normal;
 	padding:0;
@@ -335,7 +334,7 @@ div.jp-track-info h4 {
 	padding:0;
 }
 .jp-table td {
-	color:#ffffff;
+	color:#D3F4FE;
 	font-size:10pt;
 	margin:0;
 	padding:0;
@@ -347,45 +346,29 @@ div.jp-track-info h4 {
 	height:23px;
 	cursor: pointer;
 }
+.jp-table tbody td{
+	border: 1px solid #a3b1cb;
+}
 .jp-table .jp-table-track {
 	width:45px;
 	text-align:center;
 	font-weight:bold;
-	border-top:1px solid #3c3c3c;
-	border-right:1px solid #3e3e3e;
-	border-bottom:1px solid #2c2c2c;
 }
 .jp-table .jp-table-name {
 	width:108px;
 	padding-left:2px;
-	border-top:1px solid #393939;
-	border-right:1px solid #373737;
-	border-bottom:1px solid #252525;
-	border-left:1px solid #2c2c2c;
 }
 .jp-table .jp-table-artist {
 	width:160px;
 	padding-left:2px;
-	border-top:1px solid #3b3b3b;
-	border-right:1px solid #3d3d3d;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #2e2e2e;
 }
 .jp-table .jp-table-album {
 	width:171px;
 	padding-left:2px;
-	border-top:1px solid #3b3b3b;
-	border-right:1px solid #3d3d3d;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #2e2e2e;
 }
 .jp-table .jp-table-time {
 	width:100px;
 	padding-left:2px;
-	border-top:1px solid #3b3b3b;
-	border-right:1px solid #3d3d3d;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #2e2e2e;
 }
 
 .jp-table .jp-table-remove {
@@ -393,10 +376,6 @@ div.jp-track-info h4 {
 	font-weight:bold;
 	font-size:10pt;
 	width:13px;
-	border-top:1px solid #393939;
-	border-right:1px solid #373737;
-	border-bottom:1px solid #252525;
-	border-left:1px solid #2c2c2c;
 }
 .jp-table-remove a,.jp-table-remove-hover a {
 	padding:5px 2px;
@@ -404,158 +383,133 @@ div.jp-track-info h4 {
 }
 .jp-table-remove a:hover,.jp-table-remove-hover a:hover {
 	text-decoration:none;
-	color:#ffffff;
+	color: #036;
 }
 .jp-table-remove a:visited,.jp-table-remove-hover a:visited {
 	text-decoration:none;
-	color:#ffffff;
+	color: #ffffff;
 }
 /* Hover */
 .jp-table .jp-table-track-hover {
-	background:#009EEA;
 	width:28px;
 	text-align:center;
 	font-weight:bold;
-	border-top:1px solid #525252;
-	border-right:1px solid #4c4c4c;
-	border-bottom:1px solid #303030;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 .jp-table .jp-table-artist-hover {
-	background:#009EEA;
 	width:160px;
 	padding-left:2px;
-	border-top:1px solid #525252;
-	border-right:1px solid #4c4c4c;
-	border-bottom:1px solid #2d2d2d;
-	border-left:1px solid #3a3a3a;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 .jp-table .jp-table-name-hover {
-	background:#009EEA;
 	width:108px;
 	padding-left:2px;
-	border-top:1px solid #525252;
-	border-right:1px solid #444444;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #3a3a3a;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 .jp-table .jp-table-album-hover {
-	background:#009EEA;
 	width:171px;
 	padding-left:2px;
-	border-top:1px solid #525252;
-	border-right:1px solid #444444;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #3a3a3a;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 .jp-table .jp-table-time-hover {
-	background:#009EEA;
 	width:100px;
 	padding-left:2px;
-	border-top:1px solid #525252;
-	border-right:1px solid #444444;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #3a3a3a;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 .jp-table .jp-table-remove-hover {
-	background:#009EEA;
 	text-align:center;
 	font-weight:bold;
 	font-size:10pt;
 	width:13px;
-	border-top:1px solid #525252;
-	border-right:1px solid #444444;
-	border-bottom:1px solid #292929;
-	border-left:1px solid #3a3a3a;
+	background-color: #D3F4FE;
+	color: #036;
+	border: 1px solid #1072BA;
 }
 /* Current */
 .jp-table .jplayer_playlist_current .jp-table-track {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	width:28px;
 	text-align:center;
 	font-weight:bold;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8fb6d1;
-	border-bottom:1px solid #8cb3cc;
 }
 .jp-table .jplayer_playlist_current .jp-table-artist {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	width:160px;
 	padding-left:2px;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8eb5cf;
-	border-bottom:1px solid #8cb3cc;
-	border-left:1px solid #779bb4;
 }
 .jp-table .jplayer_playlist_current .jp-table-name {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	width:108px;
 	padding-left:2px;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8ab1cb;
-	border-bottom:1px solid #8cb3cc;
-	border-left:1px solid #7599b1;
 }
 .jp-table .jplayer_playlist_current .jp-table-album {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	width:171px;
 	padding-left:2px;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8ab1cb;
-	border-bottom:1px solid #8cb3cc;
-	border-left:1px solid #7599b1;
 }
 .jp-table .jplayer_playlist_current .jp-table-time {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	width:100px;
 	padding-left:2px;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8ab1cb;
-	border-bottom:1px solid #8cb3cc;
-	border-left:1px solid #7599b1;
 }
 .jp-table .jplayer_playlist_current .jp-table-remove {
-	background: url(img/current.png) repeat-x;
+	background-color: #97cdf3;
+	color: #0A3961;
+	border:1px solid #80a4bd;
 	text-align:center;
 	font-weight:bold;
 	font-size:10pt;
 	width:13px;
-	border-top:1px solid #80a4bd;
-	border-right:1px solid #8ab1cb;
-	border-bottom:1px solid #8cb3cc;
-	border-left:1px solid #7599b1;
 }
 .jp-playlist-player #jplayer_playlist a{
-	text-indent: -9999;
+	text-indent: -9999px;
 	position: absolute;
+	left: 579px;
 }
 .jp-playlist-player .jScrollPaneTrack {
-	background: #181818;
+	position: absolute;
+	background: #6fa0c0;
+	left: 579px;
 }
 .jp-playlist-player .jScrollPaneDrag {
-	background: url(middle.png) repeat-y;
+	background: url(hot_ice_jplayer.png) -127px -158px repeat-y;
 }
 .jp-playlist-player .jScrollPaneDragTop {
-	background: url(top-scroll.png) no-repeat;
-	height: 1px;
+	background: url(hot_ice_jplayer.png) -127px -90px no-repeat;
+	height: 7px;
 }
 .jp-playlist-player .jScrollPaneDragBottom {
-	background: url(bottom-scroll.png) no-repeat;
-	height: 1px;
+	background: url(hot_ice_jplayer.png) -127px -124px no-repeat;
+	height: 7px;
 }
 .jp-playlist-player a.jScrollArrowUp {
 	height: 9px;
-	background: url(top.png) no-repeat;
+	background: url(hot_ice_jplayer.png) -127px -1px no-repeat;
 	
-}
-.jp-playlist-player a.jScrollArrowUp:hover {
-	background-position: 0 0;
 }
 .jp-playlist-player a.jScrollArrowDown {
 	height: 9px;
-	background: url(bottom.png) no-repeat;
-}
-.jp-playlist-player a.jScrollArrowDown:hover {
-	background-position: 0 0;
+	background: url(hot_ice_jplayer.png) -127px -46px no-repeat;
 }
 /* IE SPECIFIC HACKED STYLES */
 * html .jp-playlist-player .jScrollPaneDragBottom {

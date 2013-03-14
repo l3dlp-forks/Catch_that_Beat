@@ -95,7 +95,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 			var jpTotalTime = $("#jplayer_duration");
 			
 			//Start the plugin
-			$("#jquery_jplayer").jPlayer({
+			$("#jquery_jplayer_1").jPlayer({
 				ready: function() {
 					thisClass.startPlaylist();
 				}
@@ -117,52 +117,54 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 	 * Insert the basic html elements needed to build the player
 	 */
 	this.buildPlayerHtml = function() {
-		var html = 	'<div id="jquery_jplayer" class="jp-jplayer"></div>'+
-					'<div class="jp-playlist-player">'+
-						'<div class="jp-gui jp-interface">'+
-							'<ul class="jp-controls">'+
-								'<li><a href="javascript:;" id="jplayer_play" class="jp-play" tabindex="1" title="Play">play</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_pause" class="jp-pause" tabindex="1" title="Pause">pause</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_stop" class="jp-stop" tabindex="1" title="Stop">stop</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_mute" class="jp-mute" tabindex="1" title="Mute">mute</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_unmute" class="jp-unmute" tabindex="1" title="min_vol">min volume</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_volume_max" class="jp-volume-max" tabindex="1" title="max_vol">max volume</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_previous" class="jp-previous" tabindex="1" title="Previous">previous</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_next" class="jp-next" tabindex="1" title="Next">next</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_repeat" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_repeat_off" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_shuffle" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>'+
-								'<li><a href="javascript:;" id="jplayer_shuffle_off" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>'+
-							'</ul>'+
-						'<div class="jp-progress">'+
-							'<div id="jplayer_seek_bar" class="jp-seek-bar">'+
-								'<div id="jplayer_play_bar" class="jp-play-bar"></div>'+
-							'</div>'+
-						'</div>'+
-						'<div id="jplayer_volume_bar" class="jp-volume-bar">'+
-							'<div id="jplayer_volume_bar_value" class="jp-volume-bar-value"></div>'+
-						'</div>'+
-						'<div id="jplayer_current_time" class="jp-current-time">00:00</div>'+
-						'<div id="jplayer_duration" class="jp-duration">00:00</div>'+
-						'<div id="jplayer_track_info" class="jp-track-info"><h2>waiting tracks...</h2><h4>none</h4></div>'+
-						'</div>'+
-						'<div id="jplayer_playlist" class="jp-playlist">'+
-							'<div class="jScrollPaneContainer jScrollPaneScrollable" style="height: 180px; width: 345px; " tabindex="0">'+
-								'<div id="jplayer_scroll_panel" class="scroll-pane" style="height: auto; width: 345px; padding-right: 5px; position: absolute; overflow-x: visible; overflow-y: visible; top: 0px; ">'+
-									'<table cellspacing="1" class="jp-table" id="jp_playlist_table">'+
-										'<tbody></tbody>'+
-									'</table>'+
-								'</div>'+
-								'<div class="jScrollCap jScrollCapTop" style="height: 0px; "></div>'+
-								'<div class="jScrollPaneTrack" style="width: 15px; height: 168px; top: 16px; ">'+
-									'<div class="jScrollPaneDrag" style="width: 15px; height: 20.0477px; top: 0px; ">'+
-										'<div class="jScrollPaneDragTop" style="width: 15px; "></div>'+
-										'<div class="jScrollPaneDragBottom" style="width: 15px; "></div>'+
+		var html = 	'<div id="jquery_jplayer_1" class="jp-jplayer"></div>'+
+					'<div id="jp_container_1" class="jp-audio">'+
+						'<div class="jp-playlist-player">'+
+							'<div class="jp-gui jp-interface">'+
+								'<ul class="jp-controls">'+
+									'<li><a href="javascript:;" id="jplayer_play" class="jp-play" tabindex="1" title="Play">play</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_pause" class="jp-pause" tabindex="1" title="Pause">pause</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_stop" class="jp-stop" tabindex="1" title="Stop">stop</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_mute" class="jp-mute" tabindex="1" title="Mute">mute</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_unmute" class="jp-unmute" tabindex="1" title="min_vol">min volume</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_volume_max" class="jp-volume-max" tabindex="1" title="max_vol">max volume</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_previous" class="jp-previous" tabindex="1" title="Previous">previous</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_next" class="jp-next" tabindex="1" title="Next">next</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_repeat" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_repeat_off" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_shuffle" class="jp-shuffle" tabindex="1" title="shuffle">shuffle</a></li>'+
+									'<li><a href="javascript:;" id="jplayer_shuffle_off" class="jp-shuffle-off" tabindex="1" title="shuffle off">shuffle off</a></li>'+
+								'</ul>'+
+								'<div class="jp-progress">'+
+									'<div id="jplayer_seek_bar" class="jp-seek-bar">'+
+										'<div id="jplayer_play_bar" class="jp-play-bar"></div>'+
 									'</div>'+
 								'</div>'+
-								'<div class="jScrollCap jScrollCapBottom" style="height: 0px; "></div>'+
-								'<a href="javascript:;" class="jScrollArrowUp disabled" tabindex="-1" style="width: 15px; top: 0px; ">Scroll up</a>'+
-								'<a href="javascript:;" class="jScrollArrowDown" tabindex="-1" style="width: 15px; bottom: 0px; ">Scroll down</a>'+
+								'<div id="jplayer_volume_bar" class="jp-volume-bar">'+
+									'<div id="jplayer_volume_bar_value" class="jp-volume-bar-value"></div>'+
+								'</div>'+
+								'<div id="jplayer_current_time" class="jp-current-time">00:00</div>'+
+								'<div id="jplayer_duration" class="jp-duration">00:00</div>'+
+								'<div id="jplayer_track_info" class="jp-track-info"><h2>waiting tracks...</h2><h4>none</h4></div>'+
+							'</div>'+
+							'<div id="jplayer_playlist" class="jp-playlist">'+
+								'<div class="jScrollPaneContainer jScrollPaneScrollable" style="height: 202px; width: 595px; " tabindex="0">'+
+									'<div id="jplayer_scroll_panel" class="scroll-pane" style="height: auto; width: 595px; padding-right: 5px; position: absolute; overflow-x: visible; overflow-y: visible; top: 0px; ">'+
+										'<table cellspacing="1" class="jp-table" id="jp_playlist_table">'+
+											'<tbody></tbody>'+
+										'</table>'+
+									'</div>'+
+									'<div class="jScrollCap jScrollCapTop" style="height: 0px; "></div>'+
+									'<div class="jScrollPaneTrack" style="width: 13px; height: 187px; top: 9px; ">'+
+										'<div class="jScrollPaneDrag" style="width: 13px; height: 20px; top: 0px; ">'+
+											'<div class="jScrollPaneDragTop" style="width: 13px; "></div>'+
+											'<div class="jScrollPaneDragBottom" style="width: 13px; "></div>'+
+										'</div>'+
+									'</div>'+
+									'<div class="jScrollCap jScrollCapBottom" style="height: 0px; "></div>'+
+									'<a href="javascript:;" class="jScrollArrowUp disabled" tabindex="-1" style="width: 13px; top: 0px; ">Scroll up</a>'+
+									'<a href="javascript:;" class="jScrollArrowDown" tabindex="-1" style="width: 13px; bottom: 0px; ">Scroll down</a>'+
+								'</div>'+
 							'</div>'+
 						'</div>'+
 					'</div>';
@@ -292,7 +294,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 		
 		//repeat playlist
 		$('#jplayer_repeat').click(function(){
-			$("#jquery_jplayer").bind($.jPlayer.event.ended + ".repeat", function(){
+			$("#jquery_jplayer_1").bind($.jPlayer.event.ended + ".repeat", function(){
 				$(this).jPlayer("play");
 			});
 			$(this).hide();
@@ -302,7 +304,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 		
 		//turn off repeat
 		$('#jplayer_repeat_off').click(function(){
-			$("jquery_jplayer").unbind(".repeat");
+			$("jquery_jplayer_1").unbind(".repeat");
 			$(this).hide();
 			$('#jplayer_repeat').show();
 			return false;
@@ -426,7 +428,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 			if (thisClass.playItem != index) {
 				thisClass.playListChange( index );
 			} else {
-				$("#jquery_jplayer").jPlayer("play");
+				$("#jquery_jplayer_1").jPlayer("play");
 			}
 			$(this).blur();
 			return false;
@@ -468,7 +470,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 		thisClass.playItem = index;
 		
 		//Set the track on the player
-		$("#jquery_jplayer").jPlayer("setFile", thisClass.playList[thisClass.playItem].mp3);
+		$("#jquery_jplayer_1").jPlayer("setFile", thisClass.playList[thisClass.playItem].mp3);
 		
 		//Show the track info
 		thisClass.showTrackInfo( index );
@@ -483,7 +485,7 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 		thisClass.playListConfig( index );
 		
 		//Start to play music
-		$("#jquery_jplayer").jPlayer("play");
+		$("#jquery_jplayer_1").jPlayer("play");
 		
 		//Show the track's info
 		thisClass.showTrackInfo( index );
@@ -519,15 +521,6 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 		//Set the track's title and artist
 		var html = '<h2>' + thisClass.playList[ index ].name + '</h2><h4>' + 'By: ' + thisClass.playList[ index ].artist + '</h4>';
 		
-		/*
-		//Set the track's cover
-		if ( thisClass.playList[ index ].cover ) {
-			html += '<img id="jplayer_track_cover" src="' + thisClass.playList[ index ].cover + '" width="63" height="62" alt="cover" />';
-		} else {
-			html += '<img id="jplayer_track_cover" src="skin/img/cover.png" width="63" height="62" alt="cover" />';
-		}
-		*/
-		
 		//Show the info
 		$('#jplayer_track_info').html( html );
 	}
@@ -537,10 +530,17 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 	 */
 	this.loadScrollPane = function() {
 		//Load the scroll pane
-		$('#jplayer_scroll_panel').jScrollPane({showArrows:true, scrollbarWidth: 10, arrowSize: 9});
+		$('#jplayer_scroll_panel').jScrollPane({showArrows:true, scrollbarWidth: 13, arrowSize: 9});
+		
+		//adjust width and height of jspContainer
+		$('.jspContainer').height(202);
+		$('.jspContainer').width(590);
+		
+		//adjust height of jspPane
+		$('.jspPane').height(202);
 	
 		//Check if the scroll has been activated
-		if ( $('#jplayer_playlist #jplayer_scroll_panel').height() > 180 ) {
+		if ( $('#jplayer_playlist #jplayer_scroll_panel').height() > 202 ) {
 			thisClass.shorterScrollPaneWidth();
 		} else {
 			thisClass.largerScrollPaneWidth();
@@ -553,16 +553,16 @@ function jPlayerSkin( container , myPlayList , currentTrack , autoplay ) {
 	this.largerScrollPaneWidth = function() {
 		$('#jplayer_playlist #jplayer_scroll_panel').width(345);
 		$('#jplayer_playlist .jScrollPaneContainer').width(345);
-		$('.jp-table .jp-table-name,.jp-table .jp-table-name-hover,.jp-table .jplayer_playlist_current .jp-table-name').width(181);
+		$('.jp-table .jp-table-name,.jp-table .jp-table-name-hover,.jp-table .jplayer_playlist_current .jp-table-name').width(345);
 	}
 	
 	/**
 	 * Set the scroll panel items with the shorter width, used with the scroll bar
 	 */
 	this.shorterScrollPaneWidth = function() {
-		$('#jplayer_playlist #jplayer_scroll_panel').width(335);
-		$('#jplayer_playlist .jScrollPaneContainer').width(340);
-		$('.jp-table .jp-table-name,.jp-table .jp-table-name-hover,.jp-table .jplayer_playlist_current .jp-table-name').width(161);
+		$('#jplayer_playlist #jplayer_scroll_panel').width(345);
+		$('#jplayer_playlist .jScrollPaneContainer').width(345);
+		$('.jp-table .jp-table-name,.jp-table .jp-table-name-hover,.jp-table .jplayer_playlist_current .jp-table-name').width(345);
 	}
 	
 	/**

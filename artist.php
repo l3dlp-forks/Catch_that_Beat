@@ -19,10 +19,12 @@
 
 <!--						PLUGINS										-->
 <script type="text/javascript" src="plugin/jQuery.jPlayer.2.2.0/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="plugin/jQuery.jPlayer.2.2.0/add-on/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="plugin/jQuery.jPlayer.2.2.0/add-on/jquery.jplayer.inspector.js"></script>
 <script type="text/javascript" src="js/to-title-case.js"></script>
 <script type="text/javascript" src="plugin/jscrollpane/jquery.jscrollpane.min.js"></script>
 <script type="text/javascript" src="plugin/jscrollpane/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="plugin/jscrollpane/jScrollPane.js"></script>
+<!-- <script type="text/javascript" src="plugin/jscrollpane/jScrollPane.js"></script>-->
 
 <!--						SCRIPTS USING APIS							-->
 <script type="text/javascript" src="js/clickSearch.js"></script>
@@ -52,10 +54,7 @@ function setSearchPlaceholder(selected){
 			<div id="info">artist info</div>
 		</div>
 		<div id="slideshow">insert images</div>
-		<div id="jplayer_container">
-			<!--		using uplayer start guide		-->
-			<?php include("include/jplayer.html"); ?>
-		</div>
+		<div id="jplayer_container"></div>
 		<div id="song_list">
 			<table cellspacing="1" id="song_table">
 				<thead>

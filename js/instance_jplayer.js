@@ -1,6 +1,6 @@
 // JavaScript Document
 
-
+var skin;
 
 //activates jplayer
 $(document).ready(function(){
@@ -14,15 +14,29 @@ $(document).ready(function(){
                                 {artist:"Opeth",name:"Dirge For November",mp3:"http://www.heavy-music.ru/gothic/Opeth/(2001)%20-%20Blackwater%20Park/05.%20Dirge%20For%20November.mp3",cover:"http://4.bp.blogspot.com/_BJs8mlnXmKQ/Rvxqy5_SqqI/AAAAAAAAD9o/ZGMhNOIea2U/s320/Opeth+-+Blackwater+Park.jpg"},
                                 {artist:"Opeth",name:"The Funeral Portrait",mp3:"http://www.heavy-music.ru/gothic/Opeth/(2001)%20-%20Blackwater%20Park/06.%20The%20Funeral%20Portrait.mp3",cover:"http://4.bp.blogspot.com/_BJs8mlnXmKQ/Rvxqy5_SqqI/AAAAAAAAD9o/ZGMhNOIea2U/s320/Opeth+-+Blackwater+Park.jpg"},
                                 {artist:"Opeth",name:"Patterns In The Ivy",mp3:"http://www.heavy-music.ru/gothic/Opeth/(2001)%20-%20Blackwater%20Park/07.%20Patterns%20In%20The%20Ivy.mp3",cover:"http://4.bp.blogspot.com/_BJs8mlnXmKQ/Rvxqy5_SqqI/AAAAAAAAD9o/ZGMhNOIea2U/s320/Opeth+-+Blackwater+Park.jpg"},
-                                {artist:"Opeth",name:"Blackwater Park",mp3:"http://www.heavy-music.ru/gothic/Opeth/(2001)%20-%20Blackwater%20Park/08.%20Blackwater%20Park.mp3",cover:"http://4.bp.blogspot.com/_BJs8mlnXmKQ/Rvxqy5_SqqI/AAAAAAAAD9o/ZGMhNOIea2U/s320/Opeth+-+Blackwater+Par,cover:"},
                         ];
                         
                         //New instance of jPlayerSkin
-                        var skin = new jPlayerSkin( '#jplayer_container' , myPlayList );
+                        skin = new jPlayerSkin( '#jplayer_container' , myPlayList );
                         
                         //Start the player
                         skin.initialize();
+						
                 });
+				
+
+//when add in track list is clicked
+function addingTrack(element){
+	//get parent ID of li clicked
+	var id = $(element).parent().get(0).id;
+	var trackInfo = document.getElementById(id).childNodes;
+	var artist_name = trackInfo[2].innerText;
+	var track_title = trackInfo[1].innerText;
+//	console.log(trackInfo[2].innerText);
+//	console.log(track_title);
+	skin.addTrack({artist:artist_name, name:track_title});
+}
+
 /*	
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function(){

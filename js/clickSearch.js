@@ -91,6 +91,8 @@ $(document).ready(function(){
 //					console.log('related names:' + $('#related_names').html());
 //					console.log('related names: ' + $('#related_names').text());
 					
+					var arrRelatedNames = [];
+					
 					//removes duplicates if found
 					if($('#related_names').html().toLowerCase().indexOf(searchInput.toLowerCase()) !== -1){
 //						console.log($('#related_names').text().toLowerCase());
@@ -111,11 +113,10 @@ $(document).ready(function(){
 						//get length of aliases
 						var len = relatedNames.length;
 						
-						//group names by 3
-						var arrRelatedNames = [];
+						//group names by 4
 						var groupIndex = 0;
-						for(var i = 0; i < len; i += 3){
-							var group = relatedNames.slice(i, i+3).join(', ');
+						for(var i = 0; i < len; i += 4){
+							var group = relatedNames.slice(i, i+4).join(', ');
 							arrRelatedNames[groupIndex] = group;
 							groupIndex++;
 						}
@@ -169,13 +170,12 @@ $(document).ready(function(){
 					} else if($('#info p').text().match(/\(\;\s/)){
 						$('#info p').html($('#info p').html().replace(/\(\;\s/g, '\('));
 					}
+					
+					//search for songs relating to searchInput using Echonest API
+					searchSongs(searchInput, searchStr, arrRelatedNames);
 				});
 //				alert("parsed txt");
 			});
 		}
-		
-		//search for songs relating to searchInput using Echonest API
-		searchSongs(searchInput, searchStr);
-		
 	});
 });
